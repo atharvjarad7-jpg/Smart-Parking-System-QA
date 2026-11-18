@@ -1,35 +1,33 @@
-# Smart Parking System Using Arduino UNO and ESP32
+# Smart Parking System Using ESP32
 
 ## 1. Project Overview
-The Smart Parking System is an IoT-based project designed to monitor parking slot availability using ultrasonic sensors and an ESP32 microcontroller.
+The Smart Parking System is an embedded system designed to detect vehicle presence in parking slots using an ESP32 microcontroller and ultrasonic sensors.
 
 ## 2. Objectives
 - Detect vehicle presence in parking slots.
-- Monitor available parking slots.
-- Display real-time parking status using Blynk IoT.
+- Monitor parking slot availability.
+- Identify occupied and empty parking slots.
 
 ## 3. Hardware Components
-- Arduino UNO
 - ESP32 Wi-Fi Microcontroller
 - HC-SR04 Ultrasonic Sensors (2)
-- Breadboard
 - Jumper Wires
+- Breadboard
 - Power Supply
 
 ## 4. Software and Tools
 - Arduino IDE
-- Blynk IoT Platform
 - GitHub
 
 ## 5. Working Principle
-The ultrasonic sensors measure the distance between the sensor and the vehicle. If the distance is less than 7 cm, the slot is considered occupied. The ESP32 sends parking status to the Blynk dashboard through Wi-Fi.
+The HC-SR04 ultrasonic sensors measure the distance between the sensor and the vehicle. If the measured distance is less than 7 cm, the parking slot is considered occupied. Otherwise, the slot is considered empty.
 
 ## 6. Quality Assurance
-The project will be tested for:
+The system will be tested for:
 - Incorrect vehicle detection
 - Sensor reading errors
-- Wi-Fi connectivity problems
-- Incorrect Blynk dashboard updates
+- Incorrect parking slot status
+- ESP32 connection problems
 
 ## 7. Project Documentation
-This repository contains source code, QA issues, testing details and project planning information.
+This repository contains ESP32 source code, circuit diagram, QA issues, testing details and project planning information.
